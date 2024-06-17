@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -10,35 +11,60 @@ html,body{
     display: none;
 }
 
-#setting{
+#demo {
+    position: absolute;
+    left:20px;
+    top:20px;
+    background-color: rgb(77, 228, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 50px;
+    height: 30px;
+    color: rgb(252, 252, 252);
+    translate: all ease 0.3s;
+}
+
+#demo:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.05);
+}
+
+#setting {
     width: 50px;
     height: 50px;
     position: fixed;
     right: 10px;
     top: 10px;
     transition: all ease 0.5s;
-    
+
     z-index: 1;
 }
-#setting:hover{
+
+#setting:hover {
     cursor: pointer;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
 }
-#setting:active{
+
+#setting:active {
     transform: scale(0.8);
 }
-iframe{
+
+iframe {
     width: 100vw;
     height: 100vh;
     border: 0;
     z-index: 0;
 }
-#sidebar{
+
+#sidebar {
     position: absolute;
-    top:0;
+    top: 0;
     right: -650px;
     width: 650px;
-    height:100vh;
+    height: 100vh;
     z-index: 9;
     display: flex;
     flex-direction: column;
@@ -49,7 +75,8 @@ iframe{
     transition: 0.8s cubic-bezier(1, -2.02, 0.38, 2.05);
 
 }
-#mask{
+
+#mask {
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -59,31 +86,35 @@ iframe{
     background-color: rgba(100, green, blue, 0);
     display: none;
 }
-#close{
+
+#close {
     width: 35px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left:2px;
+    left: 2px;
     top: 2px;
     font-size: 20px;
     font-weight: bold;
     transition: all ease 0.5s;
 }
-#close:hover{
+
+#close:hover {
     transform: rotate(90deg);
     cursor: pointer;
 }
-#bg-list{
+
+#bg-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
     padding-bottom: 150px;
 }
-.bg{
+
+.bg {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -91,7 +122,8 @@ iframe{
     cursor: pointer;
     margin: 10px 5px;
 }
-.bg img{
+
+.bg img {
     width: 280px;
     height: 150px;
 
